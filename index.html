@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tamirhane Elektronik</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Üst Başlık -->
+  <header class="bg-red-700 text-white py-6 shadow-md">
+    <div class="container mx-auto px-4">
+      <h1 class="text-3xl font-bold">Tamirhane Elektronik</h1>
+      <p class="text-sm mt-1">Yeşilırmak Mah. Orkide Sok. No:16/A - Tokat</p>
+    </div>
+  </header>
+
+  <!-- Hakkımızda -->
+  <section class="py-10">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl font-semibold mb-4">Hakkımızda</h2>
+      <p class="text-gray-700 leading-relaxed">
+        Tamirhane Elektronik olarak Tokat'ta güvenilir ve kaliteli televizyon teknik servis hizmeti sunmaktayız. Deneyimli kadromuzla, müşteri memnuniyetini ön planda tutarak hizmet vermekteyiz.
+      </p>
+    </div>
+  </section>
+
+  <!-- Hizmetler -->
+  <section class="bg-white py-10">
+  <div class="container mx-auto px-4 text-center">
+    <h2 class="text-2xl font-semibold mb-6">Hizmetlerimiz</h2>
+    <p class="text-gray-700 mb-6">Televizyon Servisi – Desteklenen Markalar:</p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 justify-items-center">
+      <!-- TCL -->
+      <div class="bg-gray-100 p-4 rounded-xl shadow-md w-40 h-40 flex items-center justify-center">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Logo_of_the_TCL_Corporation.svg/2560px-Logo_of_the_TCL_Corporation.svg.png"
+             alt="TCL Logo"
+             class="max-w-full max-h-full object-contain">
+      </div>
+
+      <!-- Sunny -->
+      <div class="bg-gray-100 p-4 rounded-xl shadow-md w-40 h-40 flex items-center justify-center">
+        <img src="https://www.sunny.com.tr/wp-content/uploads/2020/07/sunny-logo.png"
+             alt="Sunny Logo"
+             class="max-w-full max-h-full object-contain">
+      </div>
+
+      <!-- Next & Next Star -->
+      <div class="bg-gray-100 p-4 rounded-xl shadow-md w-40 h-40 flex items-center justify-center">
+        <img src="https://cdn.kod8.in/545/19135.png"
+             alt="Next Logo"
+             class="max-w-full max-h-full object-contain">
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- İletişim (Formspree ile Form) -->
+  <section class="py-10 bg-gray-50">
+    <div class="container mx-auto px-4 max-w-xl">
+      <h2 class="text-2xl font-semibold mb-6 text-center">Servis Talep Formu</h2>
+      <form action="https://formspree.io/f/mnnzpwlp" method="POST" class="space-y-4 bg-white p-6 rounded-xl shadow-md">
+        
+        <div>
+          <label class="block text-sm font-medium mb-1">İsim Soyisim</label>
+          <input type="text" name="name" required class="w-full border border-gray-300 p-2 rounded" />
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium mb-1">Telefon Numarası</label>
+          <input type="tel" name="phone" required class="w-full border border-gray-300 p-2 rounded" />
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium mb-1">Adres Bilgileri</label>
+          <input type="text" name="address" required class="w-full border border-gray-300 p-2 rounded" />
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium mb-1">Televizyon Markası</label>
+          <input type="text" name="brand" class="w-full border border-gray-300 p-2 rounded" />
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium mb-1">Ekran Boyutu (inch)</label>
+          <input type="text" name="screenSize" class="w-full border border-gray-300 p-2 rounded" />
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium mb-1">İstenilen</label>
+          <textarea name="request" rows="4" placeholder="Arıza veya talep açıklaması" class="w-full border border-gray-300 p-2 rounded"></textarea>
+        </div>
+
+        <button type="submit" class="w-full bg-red-700 text-white py-2 rounded hover:bg-red-800 transition">
+          Gönder
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Alt Bilgi -->
+  <footer class="bg-red-700 text-white text-center py-4 mt-10">
+    <p class="text-sm">© 2025 Tamirhane Elektronik - Tüm Hakları Saklıdır</p>
+  </footer>
+
+</body>
+</html>
